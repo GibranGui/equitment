@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,11 +27,14 @@
   }
 }
 </script>
+    <!-- Tambahkan Babel Standalone untuk kompilasi JSX/TSX di browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-slate-100 dark:bg-slate-900">
     <div id="root"></div>
-    <script type="module" src="index.tsx"></script>
+    <!-- Ubah tipe script agar diproses oleh Babel -->
+    <script type="text/babel" data-type="module" src="index.tsx"></script>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
