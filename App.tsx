@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
-import type { Driver, Unit, Status, EmptyUnitInfo, DriverStatusInfo } from './types';
-import { parseManpowerData } from './services/dataParser';
+import type { Driver, Unit, Status, EmptyUnitInfo, DriverStatusInfo } from './types.ts';
+import { parseManpowerData } from './services/dataParser.ts';
 
 // --- Reusable UI Components ---
 
