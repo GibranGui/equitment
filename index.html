@@ -18,23 +18,21 @@
       }
     </script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
     "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/"
   }
 }
 </script>
-    <!-- Tambahkan Babel Standalone untuk kompilasi JSX/TSX di browser -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-slate-100 dark:bg-slate-900">
     <div id="root"></div>
-    <!-- Ubah tipe script agar diproses oleh Babel, tambahkan presets, dan gunakan path relatif -->
-    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
+    <!-- Memuat satu file JavaScript modular yang berisi semua logika aplikasi -->
+    <script type="module" src="./index.js"></script>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
